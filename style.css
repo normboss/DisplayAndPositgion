@@ -13,6 +13,9 @@ body {
   margin: 0 auto;
 }
 
+strong {
+  display: block;
+}
 
 .boxes {
   width: 120px;
@@ -112,6 +115,7 @@ p {
 footer {
   background-color: #DBE9EE;
   text-align: center;
+  height: 100px;
 }
 
 .welcome {
@@ -120,6 +124,7 @@ footer {
   padding: 40px;
   text-align: center;
   width: 100%;
+  z-index: 8;
 }
 
 .question {
@@ -138,4 +143,9 @@ footer {
   color: #FFF;
 }
 
+.rectangle {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+}
 
