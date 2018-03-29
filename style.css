@@ -17,7 +17,7 @@ strong {
   display: block;
 }
 
-.boxes {
+.boxes, .parent {
   width: 120px;
   height: 70px;
   border: 5px;
@@ -27,29 +27,48 @@ strong {
 #box1 {
   border-color: red;
   background-color: red;
-  position: absolute;
-  z-index: 2;
+  /*position: absolute;*/ 
+  z-index: 2; 
 }
 
 #box2 {
   border-color: blue;
   background-color: blue;
   top: 20px;
-  left: 50px;
-  position: relative;
-  z-index: 1;
+  left: 20px;
+ /*position: relative;*/ 
+  position: absolute; 
+  z-index: 1; 
+  /*float: left;*/
+}
+
+#box3 {
+  border-color: blue;
+  background-color: green;
+  top: 20px;
+  left: 20px;
+ position: relative; 
+  /*position: absolute;*/ 
+  z-index: 1; 
+  /*float: left;*/
 }
 
 header {
   background-color: #466995;
   border-bottom: 1px solid #466995;
-  position: fixed;
+  /*position: fixed;*/
   width: 100%;
 }
 
 .welcome {
-    position: relative;
-    top: 200px;
+  /*position: relative;*/
+  top: 50px;
+  background-color: #DBE9EE;
+  box-sizing: border-box;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+/*  z-index: 8;*/
 }
 
 ul {
@@ -64,6 +83,8 @@ li {
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
+  /*display: inline-block;*/
+  width: 80px;
 }
 
 li:hover {
@@ -118,14 +139,6 @@ footer {
   height: 100px;
 }
 
-.welcome {
-  background-color: #DBE9EE;
-  box-sizing: border-box;
-  padding: 40px;
-  text-align: center;
-  width: 100%;
-  z-index: 8;
-}
 
 .question {
   text-align: center;
@@ -136,6 +149,10 @@ footer {
 .answer {
   border: 1px solid #466995;
   margin: 20px;
+  /*display: inline-block;*/
+  width: 200px;
+  height: 150px;
+  float: left;
 }
 
 .answer:hover {
@@ -144,8 +161,9 @@ footer {
 }
 
 .rectangle {
-  display: inline-block;
+  /*display: inline-block;*/
   width: 200px;
   height: 300px;
+  margin: 10px;
 }
 
